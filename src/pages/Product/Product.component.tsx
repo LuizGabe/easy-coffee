@@ -7,9 +7,12 @@ import ProductInterface from '../../models/interfaces/Product'
 
 import Paper from '../../components/atoms/Paper'
 import Typography from '../../components/atoms/Typography'
+import Filter from '../../components/molecules/FilterBox'
+import Input from '../../components/atoms/Input'
 
 import {useUser} from '../../context/User'
 import { useFormats } from '../../utils/useFormats'
+
 
 const Product = () => {
   const {state} = useUser()
@@ -25,6 +28,12 @@ const Product = () => {
     <>
       <Typography>Olá {getFisrtName(state.user?.name)}</Typography>
       <Typography>Produtos</Typography>
+      
+      <Filter handleSubmit={() => null} >
+        <Input placeholder='Digite seu filtro' type="text" />
+      </Filter>
+   
+
       <Row>
         {products.map((product) => (
           <Col lg={2} md={3} sm={4} xs={6} key={'col' + product.id}>
