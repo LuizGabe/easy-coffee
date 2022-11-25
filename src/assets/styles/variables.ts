@@ -1,5 +1,5 @@
 interface ColorsInterface {
-  veryDarkBorwn: string
+  veryDarkBrown: string
   darkGray: string
   brown: string
   transparentBrown: string
@@ -120,7 +120,7 @@ interface ZIndexInterface {
 }
 
 export const colors: ColorsInterface = {
-  veryDarkBorwn: '#240f04',
+  veryDarkBrown: '#240f04',
   brown: '#6b451e',
   transparentBrown: '#6b451ee6',
   lightBrown: '#977452',
@@ -130,7 +130,7 @@ export const colors: ColorsInterface = {
   lightGray: '#a7a7a7',
   white: '#FFF',
   black: '#000',
-  veryLightGray: '#E7E7E7'
+  veryLightGray: '#E7E7E7',
 }
 
 export const zIndex: ZIndexInterface = {
