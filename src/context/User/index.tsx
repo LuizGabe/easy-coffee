@@ -3,6 +3,7 @@ import reducer from './reducer'
 import { UserContextInterface } from '../../models/interfaces/User'
 import { ActionTypes } from './types'
 import initialValues from './initialValues'
+import { colors } from '../../assets/styles/variables'
 
 type Context = {
   state: UserContextInterface

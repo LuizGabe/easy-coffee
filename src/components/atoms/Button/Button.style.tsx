@@ -1,15 +1,20 @@
 import styled, { css } from 'styled-components'
 import { sizes, colors, fontSizes, fontWeights } from '../../../assets/styles/variables'
+import { useColor } from '../../../context/Color'
 
 export interface ButtonInterface {
   circle?: boolean
+}
+const toggleColor = () => {
+  const { state } = useColor()
+  return state
 }
 
 const Button = styled.button<ButtonInterface>`
   border: none;
   padding: ${sizes.size14} ${sizes.size20};
   min-height: ${sizes.size48};
-  background: ${colors.brown};
+  background: ${toggleColor().colorSchema.};
   border-radius: ${sizes.size15};
 
   ${({ circle }: ButtonInterface) =>

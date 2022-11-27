@@ -15,7 +15,6 @@ import { Wrapper, FieldContainer } from './Home.styles'
 
 import { useUser } from '../../context/User'
 import { colors, sizes } from '../../assets/styles/variables'
-import HighContrastButton from '../../components/atoms/HighContrastButton'
 
 const { brown } = colors
 const { size200 } = sizes
@@ -38,7 +37,6 @@ const Home = () => {
 
   return (
     <>
-      <HighContrastButton style={{ position: 'absolute' }} />
       <Container fullHeight fullCentered>
         <Paper fullCentered>
           <Wrapper>

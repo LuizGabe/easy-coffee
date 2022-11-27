@@ -1,19 +1,19 @@
 import React from 'react'
 
 import { UserProvider } from './context/User'
-import { HighContrastProvider } from './context/HighContrast'
+import { ColorProvider } from './context/Color'
 
 import Toast from './components/atoms/Toast'
 
 import AppRoutes from './routes/Routes'
 
 const App = () => (
-  <HighContrastProvider>
+  <ColorProvider>
     <UserProvider>
       <Toast />
       <AppRoutes />
     </UserProvider>
-  </HighContrastProvider>
+  </ColorProvider>
 )
 
 export default App
